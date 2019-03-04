@@ -1,5 +1,6 @@
 # coding=utf-8
-
+def foo():
+    print('Im test1')
 N = 26
 P = [1,4,16]
 Q = [26,10,20]

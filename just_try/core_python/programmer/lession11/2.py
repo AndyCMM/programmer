@@ -41,7 +41,8 @@ N is an integer within the range [1..50,000];
 each element of array A is an integer within the range [1..2 * N].
 '''
 
-
+from test import tt
+tt.fuc()
 A = [3,1,2,3,6]
 n = len(A)
 
@@ -57,11 +58,11 @@ for i in range(1,m + 1):
     while temp <= m:
         l[temp] -= c[i]
         temp += i
-print(l[1:])
+#print(l[1:])
 out = []
 for i in range(n):
     out.append(l[A[i]])
-print(out)
+#print(out)
 
 
 # for i in range(n):
