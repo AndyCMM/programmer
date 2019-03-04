@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-这是我改变后的
+这是我再次改变后的
 You are given an array A consisting of N integers.
 
 For each number A[i] such that 0 ≤ i < N, we want to count the number of elements of the array that are not the divisors of A[i]. We say that these elements are non-divisors.
