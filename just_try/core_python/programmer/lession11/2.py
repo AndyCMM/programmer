@@ -6,7 +6,7 @@ For each number A[i] such that 0 ≤ i < N, we want to count the number of eleme
 
 For example, consider integer N = 5 and array A such that:
 
-    A[0] = 3
+
     A[1] = 1
     A[2] = 2
     A[3] = 3
