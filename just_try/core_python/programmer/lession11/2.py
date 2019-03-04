@@ -43,6 +43,7 @@ each element of array A is an integer within the range [1..2 * N].
 
 from test import tt
 tt.fuc()
+
 A = [3,1,2,3,6]
 n = len(A)
 
