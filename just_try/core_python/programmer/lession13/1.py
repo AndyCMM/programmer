@@ -51,6 +51,7 @@ while True:
     if start == 0:
         break
 
+
 print(min(num))
 
 
