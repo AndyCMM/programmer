@@ -10,8 +10,6 @@ def rollback(stac):
     return step, start
 
 
-A = [0] * 11
-A[2] = A[3] = A[5] = 1
 A = [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0]
 L = len(A) + 1
 n = len(A)
