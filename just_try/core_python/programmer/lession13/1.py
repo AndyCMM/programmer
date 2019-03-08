@@ -1,4 +1,15 @@
 # coding=utf-8
+def rollback(stac):
+    if len(stack) == 0:
+        return 0, 0
+    start, bushu = stac.pop()
+    step = start - bushu
+    start -= 1
+    if start == step:
+        return rollback(stac)
+    return step, start
+
+
 A = [0] * 11
 A[2] = A[3] = A[5] = 1
 A = [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0]
@@ -10,27 +21,41 @@ for i in range(len(A)):
     if A[i] == 1:
         d.append(i + 1)
 d.append(L)
-F = [0] * (L +1)
+A.append(1)
+F = [0] * (L + 1)
 a = 0
 b = 1
 while True:
-    a , b = b, a + b
+    a, b = b, a + b
     if a > L:
         break
     F[a] = 1
-for i in range(len(d)):
-    pass
-print(d)
-d.reverse()
-i = 0
-res = 12
+res = L
+step = 0
+stack = []
+num = []
+start = L
 while True:
-    break
+    if A[start - 1] == 1 and F[start - step] == 1:
+        stack.append((start, start - step))
+        step = start
+        start = L
+
+    else:
+        start -= 1
+        if start - step == 0:
+            step, start = rollback(stack)
+    if step == L:
+        num.append(len(stack))
+        step, start = rollback(stack)
+    if start == 0:
+        break
+
+print(min(num))
 
 
 
 
-print(A)
-print(F)
+
 
 
