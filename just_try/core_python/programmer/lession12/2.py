@@ -22,7 +22,6 @@ def divise(a, c):
         a = a / res
 
 
-#print(divise(3, 5))
 A = [15, 10, 25]
 B = [75, 30, 5]
 n = len(A)
